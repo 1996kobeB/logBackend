@@ -3,6 +3,6 @@ import controller from '../../api/Ccontroller'
 const router = new Router()
 
 
-router.get('/demo',controller.demo)
+router.get('/getCaptcha',controller.getCaptcha)
 
 module.exports = router

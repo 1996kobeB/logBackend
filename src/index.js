@@ -14,8 +14,6 @@ const middleware = compose([
   koaHelmet()
 ])
 
-console.log(process.env.NODE_ENV)
-
 if(process.env.NODE_ENV === 'prod') {
   // 压缩中间件
   app.use(compress())

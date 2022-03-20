@@ -1,8 +1,12 @@
+import captcha from 'svg-captcha'
+
 class Controller {
   constructor () {}
-  async demo(ctx) {
+  async getCaptcha(ctx) {
+    const newCaptcha = captcha.create()
     ctx.body = {
-      msg: 'this from demo'
+      code: 200,
+      data: newCaptcha
     }
   }
 }
