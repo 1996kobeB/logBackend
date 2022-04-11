@@ -1,5 +1,5 @@
 const koaCombine = require('koa-combine-routers')
 
 const demo = require('./modules/publicRouter')
-
-module.exports = koaCombine(demo)
+const getValidEmail = require('./modules/emailRouter')
+module.exports = koaCombine(demo, getValidEmail)
